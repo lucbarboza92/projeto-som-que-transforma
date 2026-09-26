@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Sociais - Som que Transforma</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<main>
+    <h1>Projetos Sociais</h1>
+
+    <section>
+        <h2>Oficinas de Musicalização</h2>
+        <span class="badge badge-ativo">Projeto ativo</span>
+        <p>
+            Atividades introdutórias de música destinadas a crianças e adolescentes,
+            trabalhando ritmo, percepção musical e canto coral. As oficinas também
+            promovem o contato com músicos da comunidade, proporcionando novas
+            experiências e despertando sonhos, talentos e objetivos por meio da arte.
+        </p>
+        <picture>
+    <source srcset="../imagens/oficina-musical.webp" type="image/webp">
+    <img src="../imagens/oficina-musical.jpg"
+         alt="Jovens participando de uma atividade musical em grupo">
+</picture>
+    </section>
+
+    <section id="doacoes"></section>
+        <h2>Doações</h2>
+        <span class="badge badge-doacao">Doações abertas</span>
+        <p>
+            Campanha destinada à arrecadação de recursos para melhorias nas salas e
+            instalações do projeto, além da doação de instrumentos musicais novos ou
+            usados, contribuindo para ampliar o acesso dos participantes às atividades
+            oferecidas.
+        </p>
+        <picture>
+    <source srcset="../imagens/doacao-instrumentos.webp" type="image/webp">
+    <img src="../imagens/doacao-instrumentos.jpg"
+         alt="Crianças participando de atividade musical com instrumentos">
+</picture>
+<div class="alerta">
+    <strong>Como ajudar:</strong>
+    Você pode contribuir com instrumentos musicais, materiais ou recursos
+    destinados às atividades do projeto.
+</div>
+
+<button type="button" class="btn-modal" id="abrir-modal">
+    Saiba mais
+</button>
+
+    </section>
+
+    <div class="modal" id="modal-informacoes" role="dialog"
+     aria-modal="true" aria-labelledby="titulo-modal">
+
+    <div class="modal-conteudo">
+    <button type="button" class="fechar-modal"
+            id="fechar-modal" aria-label="Fechar">
+        &times;
+    </button>
+
+    <h2 id="titulo-modal">Participe do Projeto</h2>
+
+    <p>
+        Existem diferentes formas de apoiar o Projeto Som que Transforma.
+        Você pode realizar doações de instrumentos e materiais ou participar
+        das atividades como voluntário.
+    </p>
+
+    <div class="atendimento-whatsapp">
+        <h3>Atendimento pelo WhatsApp</h3>
+
+        <p>
+            Escaneie o QR Code abaixo para iniciar um atendimento
+            automatizado e obter mais informações sobre como participar.
+        </p>
+
+        <img src="../imagens/qrcode-whatsapp.png"
+     alt="QR Code fictício para atendimento automatizado pelo WhatsApp">
+
+        <p class="aviso-ficticio">
+            QR Code demonstrativo
+        </p>
+    </div>
+</div>
+</div>
+
+</main>
+<script>
+    const abrirModal = document.querySelector('#abrir-modal');
+    const fecharModal = document.querySelector('#fechar-modal');
+    const modal = document.querySelector('#modal-informacoes');
+
+    abrirModal.addEventListener('click', function () {
+        modal.classList.add('ativo');
+    });
+
+    fecharModal.addEventListener('click', function () {
+        modal.classList.remove('ativo');
+    });
+</script>
+
+</body>
+</html>

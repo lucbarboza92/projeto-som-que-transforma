@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Som que Transforma</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Som que Transforma</h1>
+
+<nav class="navegacao">
+    <button class="menu-toggle" aria-label="Abrir menu">
+        ☰
+    </button>
+
+   <div class="nav-menu">
+
+    <a href="index.html" data-page="inicio">Início</a>
+
+    <div class="menu-dropdown">
+        <a href="projetos.html" data-page="projetos">Projetos</a>
+
+        <div class="submenu">
+            <a href="projetos.html#doacoes">Doações</a>
+            <a href="projetos.html#voluntariado">Voluntariado</a>
+        </div>
+    </div>
+
+    <a href="cadastro.html" data-page="cadastro">Cadastre-se</a>
+
+</div>
+</nav>
+    </header>
+
+    <main id="conteudo">
+
+        <section>
+            <h2>Quem Somos</h2>
+
+            <p>
+                O Projeto Som que Transforma é uma iniciativa social que utiliza
+                a música como ferramenta de inclusão sociocultural para crianças
+                e adolescentes.
+            </p>
+        </section>
+
+        <section>
+            <h2>Nossa Missão</h2>
+
+            <p>
+                Promover oportunidades de aprendizado, desenvolvimento pessoal e
+                integração social por meio da educação musical.
+            </p>
+        </section>
+
+        
+
+    </main>
+
+    
+
+
+
+<section>
+            <h2>Como Participar</h2>
+
+            <p>
+                Você pode apoiar o projeto por meio de doações, trabalho
+                voluntário ou participação em nossas iniciativas.
+            </p>
+        </section>
+        <footer>
+        <p>&copy; 2026 Projeto Som que Transforma.</p>
+    </footer>
+
+ <script>
+    const botaoMenu = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav-menu');
+
+    botaoMenu.addEventListener('click', function () {
+        menu.classList.toggle('active');
+    });
+ </script>
+<script type="module" src="../js/script.js"></script>
+    </body>
+</html>
+
