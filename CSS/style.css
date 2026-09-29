@@ -414,3 +414,10 @@ button[type="submit"]:active {
     margin-bottom: var(--espacamento-1);
     align-self: flex-start;
 }
+/* ===== Imagens responsivas ===== */
+
+picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
